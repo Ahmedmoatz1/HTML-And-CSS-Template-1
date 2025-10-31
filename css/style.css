@@ -152,35 +152,45 @@ header .links ul li:not(:last-child) a{
 /* end header */
 /* start landing section */
 .landing {
-   background-image: url(img/landing.jpg);
-}
-.landing{
-   
-   /* background-image: url(img/landing.jpg) ; */
-   background-size: cover;
-   height: calc(100vh - 64px);
-  position: relative;
+    position: relative;
+    height: calc(100vh - 64px);
+    overflow: hidden; /* تمنع الصورة من الخروج عن الـ container */
 }
 
-.landing .intro-text{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50% ,-50%);
-  text-align: center;
-  width: 320px;
-  max-width: 100%;
+.landing img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;        /* تمتد بعرض الـ landing */
+    height: 100%;       /* تمتد بارتفاع الـ landing */
+    object-fit: cover;  /* تغطي المساحة بدون تشويه */
+    z-index: -1;        /* تبقى خلف النصوص */
 }
-.landing .intro-text h1{
-  margin: 0;
-  font-weight: bold;
-  font-size: 50px;
-  color: var(--main-color);
+
+.landing .intro-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    color: white; /* للتأكد من وضوح النص على الصورة */
 }
-.landing .intro-text p{
-  font-size: 19px;
-  color: aliceblue;
+
+.landing .intro-text h1 {
+    margin: 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 50px;
 }
+
+.landing .intro-text p {
+  color: #ebeced;
+    font-size: 20px;
+}
+
+
 /* features */
 .features{
   padding: var(--section-padding);
