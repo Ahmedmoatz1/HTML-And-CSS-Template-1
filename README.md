@@ -31,11 +31,12 @@ Perfect for beginners or front-end developers who want to learn layout structuri
 </p>
 
 ---
-
-## 🖼️ Preview
-Here’s a preview of how the website looks 👇  
+## Live Demo
+**See the website in action**  
 <p align="center">
-  <img src="preview.png" alt="Website Preview" width="80%" style="border-radius:12px;" />
+  <a href="https://ahmedmoatz1.github.io/HTML-And-CSS-Template-1/" target="_blank">
+    <img src="https://img.shields.io/badge/Live_Demo-10CAB7?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
+  </a>
 </p>
 
 ---
